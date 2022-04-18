@@ -1,3 +1,5 @@
+import org.w3c.dom.css.Rect;
+
 import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
@@ -9,6 +11,20 @@ class ComparatorInterface {
         // so we need to pass this information in the constructor of TreeSet, otherwise
         // it will think, that the compare logic is present in the `Rectangle` class itself
         // and will crash when it does not find the logic there.
+
+        set.add(new Rectangle(4,4));
+        set.add(new Rectangle(4,4));
+        set.add(new Rectangle(8,4));
+        set.add(new Rectangle(9,4));
+        set.add(new Rectangle(6,4));
+        set.add(new Rectangle(2,4));
+
+        System.out.println("Printing Elements in Sorted Sequence");
+        int k = 1;
+        for(Rectangle i : set) {
+            System.out.println("Perimeter of Rectangle " + k + " is " + i.perimeter());
+            k++;
+        }
     }
 }
 class Rectangle {
