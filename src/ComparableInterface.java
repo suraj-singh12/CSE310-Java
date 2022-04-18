@@ -14,6 +14,12 @@ class ComparableInterface {
         }
     }
 }
+// comparable interface has compareTo(arg) method;
+// comparable interface is implemented in same class whose objects you want to add in TreeSet
+
+// comparator interface has compare(arg1, arg2) method;
+// comparator interface is implemented completely separately.
+
 class Book implements Comparable<Book> {
     int id;
     String name, author, publisher;
