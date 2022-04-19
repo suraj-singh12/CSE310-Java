@@ -7,8 +7,16 @@ public class GenericsInJava {
     instead write one generic class.
      */
     public static void main(String[] args) {
-        Gen<Integer> obj = new Gen<Integer>();
+        Gen<Integer> obj1 = new Gen<Integer>();
+
+        obj1.set(23);
+        Integer i = obj1.get();
+        System.out.println(i.intValue());
+
         Gen<Double> obj2 = new Gen<Double>();
+        obj2.set(23.6);
+        Double d = obj2.get();
+        System.out.println(d.doubleValue());
     }
 }
 // creating our own custom Generic class
