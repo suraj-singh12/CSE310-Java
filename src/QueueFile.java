@@ -4,6 +4,7 @@ import java.util.LinkedList;
 public class QueueFile {
     public static void main(String[] args) {
         Deque<String> obj = new LinkedList<String>();
+        // Deque means doubly ended queue
 
         obj.offer("RCB");
         obj.offer("MI");
